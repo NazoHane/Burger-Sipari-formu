@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> NAZO BURGER SiPARiŞ SAYFASI </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h3 class="baslik">NAZO BURGER SiPARiŞ FORMU</h3>
+    <form action="" id="formburger">
+        <label for="listeburger"> Burger seçiniz:</label>
+        <select name="" id="listeburger" size="4">
+            <option value="20">Klasik Burger</option>
+            <option value="50">İkili Köftem Burger</option>
+            <option value="40">Cheess Burger</option>
+            <option value="30">Tavuk Burger</option>
+        </select>
+        <label for="grupPS">Pişirme Seçimi:</label>
+        <span>
+            <label for="pisme1">Az Pişmiş</label>
+            <input type="checkbox" name="grupPS" id="pisme1" value="Az Pişmiş">
+            <label for="pisme2">Orta Pişmiş</label>
+            <input type="checkbox" name="grupPS" id="pisme2" value="Orta Pişmiş">
+            <label for="pisme3">Çok Pişmiş</label>
+            <input type="checkbox" name="grupPS" id="pisme3" value="Çok Pişmiş">
+
+        </span>
+           
+            <label for="grupEkMalzeme">Ek malzeme seçiniz:</label>
+        <span>
+            <label for="mal1">Çedar Peyniri</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal1" value="Çedar Peyniri">
+            <label for="mal2">Marul</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal2" value="Marul">
+            <label for="mal3">Turşu</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal3" value="Turşu">
+            <label for="mal4">Ketçap</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal4" value="Ketçap">
+            <label for="mal5">Mayonez</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal5" value="Mayonez">
+            <label for="mal6">Barbekü sosu</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal6" value="Barbekü Sosu">
+        </span>
+                   
+       
+        <label for="listeEkSecimler">Seçtiğiniz ek malzemeler:</label>
+        <select name="" id="listeEkSecimler" size="6">
+        </select> 
+
+        <label for="grupIndirim">İndirim kodunu giriniz:</label>
+        <span>
+            <label for="kodTrue">İndirim kodum var</label>
+            <input type="radio" name="grupIndirim" id="kodTrue" value="Aktif" onchange="toogle();">
+            <label for="kodFalse">İndirim kodum yok</label>
+            <input type="radio" name="grupIndirim" id="kodFalse" value="Pasif" onchange="toogle();" checked>           
+        </span>
+        <label for="txtIndirimKodu">İndirim kodunu giriniz:</label>
+        <input type="text" name="" id="txtIndirimKodu" disabled >
+        <input type="button" value="Hesapla/Doğrula" id="btnHesapla" onclick="BurgerHesapla();">
+
+    </form>
+    <h5 id="sonuc"></h5>
+    <h5 id="dogrulama" style="color:red"></h5>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
